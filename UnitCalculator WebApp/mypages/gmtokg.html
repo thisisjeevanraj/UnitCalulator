@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>TM App</title>
+  <link rel="stylesheet" href="css/framework7.min.css">  
+  <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/myf7.css">
+  <link rel="apple-touch-icon" href="img/f7-icon-square.png">
+  <link rel="icon" href="img/f7-icon.png">    
+</head>
+<body>
+  <div id="app">
+    <div class="statusbar"></div>
+      <!-- side panel -->
+    <div class="panel panel-left panel-cover">
+      <div class="page">
+        <div class="page-content">
+          <div class="block-title" style="margin: 0;background: #354873;height: 12em;margin-bottom: -3.5em;">
+            <a href="profile.html" class="item-link close-panel">
+                <div class="row" style="margin-top: 2em;">
+                    <div class="col-100 tablet-50 centertext">
+                        <img src="img/dj.jpg" style="width: 70px;height: 70px;border: 2px solid #fff;border-radius: 50px;">
+                    </div>   
+                </div>
+                  <div class="row" style="color: white;">                      
+                      <div class="col-100">
+                          <span class="centertext">DJ</span>
+                          <span class="centertext">dj@gmail.com</span>
+                      </div>
+                  </div>
+              </a>  
+          </div>
+          <!--<div class="block">
+            <p> <a href="#" class="panel-close">close me</a>
+                <a href="#" data-panel="right" class="panel-open"></a></p>
+          </div>-->
+          <div class="block-title"><!--Menu--></div>
+          <div class="list links-list">
+            <ul>
+              <li>
+                <!--<a href="/createproject/" class="panel-close centertext sidemenufont">Create Project</a>
+                <a href="/manageproject/" class="panel-close centertext sidemenufont">Manage Project</a>
+                  <a href="/createtask/" class="panel-close centertext sidemenufont">Create Task</a>
+                <a href="/managetask/" class="panel-close centertext sidemenufont">Manage Task</a>-->
+                  <a href="/" class="panel-close centertext sidemenufont">kg to gm</a>
+                  <a href="/gmtokg/" class="panel-close centertext sidemenufont">gm to kg</a>                  
+                  <a href="/about/" class="panel-close centertext sidemenufont">About</a>
+              </li>
+             
+            </ul>
+          </div>
+          <div class="block">
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- side panel-->
+      
+      
+    <div class="view view-main view-init ios-edges" data-url="/">
+      <div class="page">
+        <div class="navbar">
+          <div class="navbar-inner" style="background: #354873;"><!-- #03a9f4;-->
+            <div class="left">
+              <a href="#" class="link icon-only panel-open" data-panel="left">
+                <i class="icon f7-icons ios-only">menu</i>
+                <i class="icon material-icons md-only">menu</i>
+              </a>
+            </div>
+            <div class="title sliding" style="margin: 0 auto;">Price Calculator</div>
+              <div class="right" style="margin-right: 20px;">
+              <i class="icon material-icons md-only">home</i>
+              </div>
+            <!--<div class="right">
+              <a class="link icon-only searchbar-enable" data-searchbar=".searchbar-components">
+                <i class="icon f7-icons ios-only">search_strong</i>
+                <i class="icon material-icons md-only">search</i>
+              </a>
+            </div>
+            <form data-search-container=".components-list" data-search-in="a" class="searchbar searchbar-expandable searchbar-components searchbar-init">
+              <div class="searchbar-inner">
+                <div class="searchbar-input-wrap">
+                  <input type="search" placeholder="Search components"/>
+                  <i class="searchbar-icon"></i>
+                  <span class="input-clear-button"></span>
+                </div>
+                <span class="searchbar-disable-button">Cancel</span>
+              </div>
+            </form>-->
+          </div>
+        </div>
+        <div class="page-content">
+          <!--<div class="list searchbar-hide-on-search">
+            <ul>
+              <li>
+                <a class="item-content item-link" href="#">
+                  <div class="item-media"><i class="icon icon-f7"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title">Offline Video</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>-->
+        <div class="page-content" style="padding-top: 14px;background: #F3F5FA;">
+         
+  <div class="block-title" style="background: #354873;min-height: 10em;margin: 0px;margin-top: -1em;border-bottom-right-radius: 4em;border-bottom-left-radius: 4em;">       <!--Responsive Grid-->
+      <span style="position: absolute;top: 40px;color: white;font-weight: bold;font-size: 1.5em;left: 1.2em;"><!--Welcome <i>User</i>--></span>
+  </div>
+    <div class="block">
+     <div class="card" style="box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);">
+        <div class="card-content centertext mainpageblock" style="margin-top: -4em;border: none;font-size: 16px;">      
+          <!--<div class="row">
+            <div class="col-50 tablet-25 centertext mainpageblock">
+                <a href="/createproject/" class="centertext" style="color:#354873;"><img src="img/create_project.png" style="width: 70px;height: 70px;border: 2px solid #fff;border-radius: 50px;margin-right: 1em;">Create Project</a>
+            </div>
+            <div class="col-50 tablet-25 centertext mainpageblock">
+                <a href="/createtask/" class="centertext" style="color:#354873;"><img src="img/view_projects.png" style="width: 70px;height: 70px;border: 2px solid #fff;border-radius: 50px;margin-right: 1em;">Create Task</a></div>        
+          </div> --> Weight - Price Calculator
+        </div>
+     </div>
+    <!--<div class="content" style="font-weight: bold;color: #354873;font-size: 1.2em;margin:  10px auto;">Weight - Price Calculator</div>-->
+    <div class="list no-hairlines-md">         
+            <div class="row" style="padding-left: 16px;">
+            <div class="col-50 tablet-25">
+                <div class="item-title" style="color:#354873;"><i>In Grams</i></div>
+                <div class="item-inner">                
+                <div class="item-input-wrap">
+                  <input id="gval" type="number" placeholder="">
+                  <!--<span class="input-clear-button"></span>-->
+                </div>
+              </div>
+            </div>
+            <div class="col-50 tablet-25">
+                <div class="item-title" style="color:#354873;"><i>Price</i></div>
+                <div class="item-inner">
+                <!--<div class="item-title item-floating-label">Task Name</div>-->
+                <div class="item-input-wrap">
+                  <input id="gpriceval" type="number">
+                  <!--<span class="input-clear-button"></span>-->
+                </div>
+              </div>   
+            </div>                                            
+          </div> 
+        </div>
+    <div class="block">
+        <div class="row no-gap">
+        <div class="col-25">&nbsp;</div>
+        <div class="col-50"><button onclick="gmgetPrice()" class="col button button-small button-outline handlebgbtn">Calculate</button></div>
+        <div onclick="gclearall()" class="col-25" style="font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4px;
+    font-weight: bold;
+    color: green;">Clear All</div>
+    </div>
+      </div>
+        
+    <div class="block">   
+      <div class="row">
+        <div class="col">
+            <div class="card demo-facebook-card" style="background: #E684AE;color: white;box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);min-height: 7em;max-height: 7em;">
+              <div class="card-header employeetaskcards">                        
+                <div class="demo-facebook-name gmheader" style="margin-left: 0px;
+                font-size: 1em;">1kg</div> 
+              </div>
+              <div class="card-content card-content-padding" style="font-size: 14px;">
+                <p class="pricegm">&#8377;<b id="gm1000">0</b></p>
+              </div>      
+            </div>  
+        </div>
+        <div class="col">
+            <div class="card demo-facebook-card" style="background: #314755;color: white;box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);min-height: 7em;max-height: 7em;">
+              <div class="card-header employeetaskcards">                        
+                <div class="demo-facebook-name gmheader" style="margin-left: 0px;
+                font-size: 1em;">500g</div> 
+              </div>
+              <div class="card-content card-content-padding" style="font-size: 14px;">
+                <p class="pricegm">&#8377;<b id="gm500">0</b></p>
+              </div>      
+            </div>  
+        </div>
+        <div class="col">
+            <div class="card demo-facebook-card" style="background: #26a0da;color: white;box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);min-height: 7em;max-height: 7em;">
+              <div class="card-header gmheader">                        
+                <div class="demo-facebook-name gmheader" style="margin-left: 0px;
+                font-size: 1em;">250g</div> 
+              </div>
+              <div class="card-content card-content-padding" style="font-size: 14px;">
+                <p class="pricegm">&#8377;<b id="gm250">0</b></p>
+              </div>      
+            </div>
+        </div>
+        <div class="col">
+            <div class="card demo-facebook-card" style="background: #e65c00;color: white;box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);min-height: 7em;max-height: 7em;">
+              <div class="card-header gmheader">                        
+                <div class="demo-facebook-name gmheader" style="margin-left: 0px;
+                font-size: 1em;">200g</div> 
+              </div>
+              <div class="card-content card-content-padding" style="font-size: 14px;">
+                <p class="pricegm">&#8377;<b id="mg200">0</b></p>
+              </div>      
+            </div>  
+        </div>
+      </div>  
+        
+        <div class="row">
+            <div class="col">
+            <div class="card demo-facebook-card" style="background: #799F0C;color: white;box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);min-height: 7em;max-height: 7em;">
+              <div class="card-header gmheader">                        
+                <div class="demo-facebook-name gmheader" style="margin-left: 0px;
+                font-size: 1em;">150g</div> 
+              </div>
+              <div class="card-content card-content-padding" style="font-size: 14px;">
+                <p class="pricegm">&#8377;<b id="gm150">0</b></p>
+              </div>      
+            </div>  
+        </div>
+            <div class="col">
+            <div class="card demo-facebook-card" style="background: #2193b0;color: white;box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);min-height: 7em;max-height: 7em;">
+              <div class="card-header gmheader">                        
+                <div class="demo-facebook-name gmheader" style="margin-left: 0px;
+                font-size: 1em;">100g</div> 
+              </div>
+              <div class="card-content card-content-padding" style="font-size: 14px;">
+                <p class="pricegm">&#8377;<b id="gm100">0</b></p>
+              </div>      
+            </div>  
+        </div>
+            <div class="col">
+                <div class="card demo-facebook-card" style="background: #cc2b5e;color: white;box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);min-height: 7em;max-height: 7em;">
+                      <div class="card-header employeetaskcards">                        
+                        <div class="demo-facebook-name gmheader" style="margin-left: 0px;
+                        font-size: 1em;">50g</div> 
+                      </div>
+                      <div class="card-content card-content-padding" style="font-size: 14px;">
+                        <p class="pricegm">&#8377;<b id="gm50">0</b></p>
+                      </div>      
+                    </div>         
+            </div>
+            <div class="col">
+                <div class="card demo-facebook-card" style="background: #00467F;color: white;box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);min-height: 7em;max-height: 7em;">
+                      <div class="card-header employeetaskcards">                        
+                        <div class="demo-facebook-name gmheader" style="margin-left: 0px;
+                        font-size: 1em;">25g</div> 
+                      </div>
+                      <div class="card-content card-content-padding" style="font-size: 14px;">
+                        <p class="pricegm">&#8377;<b id="gm25">0</b></p>
+                      </div>      
+                    </div>         
+            </div>
+        </div>
+    </div>
+        
+        
+        
+      <!--<div class="row">
+        <div class="col-50 tablet-25 centertext mainpageblock">Create Project</div>
+        <div class="col-50 tablet-25 centertext mainpageblock">View Project</div>        
+      </div>  -->
+    </div>
+ 
+  <!--<div class="block row">
+    <div class="col-50"><a href="#" class="button pb-standalone-dark">Images</a></div>
+    <div class="col-50"><a href="#" class="button pb-standalone-video">Video</a></div>
+  </div>-->
+        </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/framework7.min.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/app.js"></script>
+    <script src="js/jQuery321.js"></script>
+</body>
+</html>

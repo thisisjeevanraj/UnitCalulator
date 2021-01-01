@@ -1,0 +1,152 @@
+.centertext{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.sidemenufont{
+    color: #354873 !important;
+}
+.mainpageblock{
+    min-height: 5em;
+    border: 1px solid #354873;
+    max-height: 8em;
+    border-radius: 10px;
+}
+
+.gmheader{
+    color: white !important;
+    text-align: center;
+}
+.pricegm{
+    color: white !important;
+    text-align: center;
+}
+
+
+
+
+
+.handlebtn{
+    color: #354873 !important;
+    border: 1px solid #354873 !important;
+    font-size: 16px !important;
+}
+.handlebgbtn{
+    color: white!important;
+    border: 1px solid #354873 !important;
+    font-size: 16px !important;
+    background: #354873 !important;
+}
+/****************** Framework 7 custom ***************************/
+.md .list .item-inner:after{background-color:#fff !important;}
+.md .item-floating-label, .md .item-label{
+    line-height: 25px !important;    
+}
+.md .item-input-focused .item-label{
+    color: #354873 !important;
+}
+.md .item-input-focused .item-floating-label{
+    color: #354873 !important;
+}
+.md .item-input-focused .item-input-wrap:after{background:#354873 !important}
+
+.md .links-list a {
+    height: 60px !important;
+    color: inherit;
+}
+/*.md a {
+    color: #354873 !important;
+}*/
+/****************** Framework 7 custom ***************************/
+/****************** Task Detail ***************************/
+.taskdetailtitle{
+   /* color: rgba(0,0,0,.54);*/
+    color: #1A2139;
+    margin: 20px 16px 16px;
+    line-height: 1.2em;
+    font-weight: 500;
+    position: relative;
+    /* overflow: hidden; */
+    /* margin: 0; */
+    /* white-space: nowrap; */
+    /* text-overflow: ellipsis; */
+    font-size: 26px;
+    line-height: 1.2;    
+}
+.taskdetaildesc{
+    padding-top: 5px !important;
+    margin: 20px 16px 16px;
+    color: #666A79;
+    text-align: justify;
+    font-size: 15px;
+}
+/****************** Task Detail ***************************/
+/******************************* Employee ***************************************/
+.employeetaskcards:after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    display: block;
+    z-index: 15;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+.employeemytaskdash{
+    margin-left: 0px;
+    font-size: 18px;
+    color: #1A2139;
+    line-height: 1.2em;
+    position: relative;
+}
+.empcardtaskdesc1{
+    text-align: justify !important;
+    display: -webkit-box !important;
+    max-width: 100% !important;
+    height: 6em !important;
+    margin: 0 auto !important;
+    font-size: 1em !important;
+    line-height: 1.5em !important;    
+    -webkit-line-clamp: 4 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+/******************************* Employee ***************************************/
+/******************************* manage task ***************************************/
+.empmanagealltaskcards:after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    display: block;
+    z-index: 15;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+.empmanagealltaskcard-footer:before {
+    content: '';
+    position: absolute;
+    background-color: white;
+    display: block;
+    z-index: 15;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+/******************************* manage task ***************************************/
